@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Zylkia 5 — IA Gamer Offline (épica)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#04040a;
+    --panel:#0b0b12;
+    --accent1:#00ffd7;
+    --accent2:#7c3cff;
+    --text:#e6f7ff;
+    --muted:#9aa0a6;
+  }
+  html,body{height:100%;margin:0;background:radial-gradient(1200px 600px at 10% 10%, rgba(124,60,255,0.08), transparent), radial-gradient(1000px 600px at 90% 90%, rgba(0,255,215,0.05), transparent), var(--bg);font-family:Orbitron,system-ui,Segoe UI,Roboto,Arial;color:var(--text);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1100px;margin:28px auto;padding:18px;display:grid;grid-template-columns:360px 1fr;gap:18px;align-items:start}
+  /* LEFT: panel de controls */
+  .panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.04)}
+  .brand{display:flex;gap:12px;align-items:center}
+  .logo {
+    width:72px;height:72px;border-radius:16px;background:conic-gradient(from 200deg,var(--accent2),var(--accent1));display:grid;place-items:center;color:#000;font-weight:900;font-size:16px;box-shadow:0 0 30px rgba(0,255,215,.08),0 0 80px rgba(124,60,255,.03);position:relative;overflow:hidden;
+    animation:logoFloat 4s ease-in-out infinite;
+  }
+  @keyframes logoFloat{0%{transform:translateY(0) rotate(0)}50%{transform:translateY(-6px) rotate(2deg)}100%{transform:translateY(0) rotate(0)}}
+  .logo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%, rgba(255,255,255,.12), transparent);mix-blend-mode:overlay}
+  .brand h1{font-size:18px;margin:0}
+  .subtitle{font-size:11px;color:var(--muted);margin-top:6px}
+  .controls{margin-top:16px;display:flex;flex-direction:column;gap:8px}
+  .btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#001;padding:10px;border-radius:10px;border:none;cursor:pointer;font-weight:700;box-shadow:0 6px 18px rgba(124,60,255,.12)}
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.06)}
+  label{font-size:12px;color:var(--muted)}
+  .small{font-size:12px;color:var(--muted);margin-top:6px}
+  .switch{display:flex;gap:8px;align-items:center}
+
+  /* RIGHT: chat area */
+  .chat-area{display:flex;flex-direction:column;height:80vh}
+  .stage{flex:0 0 180px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,.06));border-radius:12px;padding:12px;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.03)}
+  /* luces reactivas */
+  .stage .lights{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen}
+  .stage .wave{position:absolute;left:50%;top:50%;width:1600px;height:1600px;border-radius:50%;transform:translate(-50%,-50%);opacity:0.03;background:radial-gradient(circle at 30% 30%, var(--accent1), transparent 30%), radial-gradient(circle at 70% 70%, var(--accent2), transparent 30%)}
+  .stage .title{position:relative;z-index:2;font-size:20px;margin:10px 0}
+  .stage .sub{font-size:12px;color:var(--muted)}
+  /* chat box */
+  .chat-box{flex:1;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.03));margin-top:12px;border-radius:12px;padding:12px;overflow:auto;border:1px solid rgba(255,255,255,.03)}
+  .msg{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+  .msg.user .bubble{background:linear-gradient(90deg,#111,rgba(255,255,255,.02));color:var(--text);align-self:flex-end}
+  .msg.ai .bubble{background:linear-gradient(90deg, rgba(0,255,215,0.08), rgba(124,60,255,0.06));color:var(--text)}
+  .avatar{width:40px;height:40px;border-radius:10px;background:linear-gradient(90deg,var(--accent2),var(--accent1));display:grid;place-items:center;font-weight:900}
+  .bubble{padding:10px 14px;border-radius:12px;max-width:74%;font-size:14px;line-height:1.35;box-shadow:var(--shadow,0 6px 20px rgba(0,0,0,.5))}
+  .meta{font-size:11px;color:var(--muted);margin-top:6px}
+  .composer{display:flex;gap:8px;margin-top:12px;align-items:center}
+  .input{flex:1;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.04);background:transparent;color:var(--text)}
+  .voiceBtn{width:48px;height:48px;border-radius:12px;border:none;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#001;font-weight:900;cursor:pointer}
+  .bottom-actions{display:flex;gap:8px;align-items:center;margin-top:10px}
+
+  /* responsive */
+  @media(max-width:980px){.wrap{grid-template-columns:1fr;gap:12px;padding:12px}.stage{height:160px}.chat-area{height:70vh}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <!-- LEFT - Controls -->
+  <div class="panel">
+    <div class="brand">
+      <div class="logo" id="logoEl">Z5</div>
+      <div>
+        <h1>Zylkia 5 — IA Gamer</h1>
+        <div class="subtitle">Offline · Voz · Aprende · Ultra épica</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="resetMemory">🧠 Limpiar memoria</button>
+      <button class="btn ghost" id="exportMemory">⬇ Exportar memoria</button>
+      <input type="file" id="importFile" style="display:none" />
+      <button class="btn ghost" id="importBtn">⬆ Importar memoria</button>
+
+      <div style="margin-top:12px">
+        <label>Velocidad de escritura (ms por carácter)</label>
+        <input id="typeSpeed" type="range" min="4" max="45" value="26" style="width:100%" />
+      </div>
+
+      <div style="margin-top:8px" class="switch">
+        <label>Voz activa</label>
+        <input type="checkbox" id="voiceToggle" checked />
+      </div>
+
+      <div style="margin-top:12px">
+        <label>Volumen</label>
+        <input id="voiceVol" type="range" min="0" max="1" step="0.05" value="0.9" style="width:100%" />
+      </div>
+
+      <div style="margin-top:12px">
+        <label>Modo respuesta</label>
+        <select id="modeSelect" style="width:100%;padding:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,.04);color:var(--text)">
+          <option value="creative">Creativa / Expansiva</option>
+          <option value="concise">Concisa / Técnica</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT - Chat + Stage -->
+  <div class="chat-area">
+    <div class="stage">
+      <div class="lights" aria-hidden="true">
+        <div class="wave" id="visualWave"></div>
+      </div>
+      <div class="title">Bienvenido a la experiencia educativa gamer</div>
+      <div class="sub">Habla, escribe o reta a Zylkia. Ella recuerda lo que le enseñas.</div>
+    </div>
+
+    <div class="chat-box" id="chatBox" role="log" aria-live="polite"></div>
+
+    <div class="composer">
+      <input id="userInput" class="input" placeholder="Escribe algo o pulsa 🎙️ para hablar..." />
+      <button id="voiceBtn" class="voiceBtn">🎙️</button>
+      <button id="sendBtn" class="btn">Enviar</button>
+    </div>
+
+    <div class="bottom-actions">
+      <div id="statusSmall" class="small">Listo. Escribe /help para comandos.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SOUND: pequeño beep (base64) -->
+<audio id="beep" src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQAAAAA="></audio>
+
+<script>
+/* ==========================
+   IA OFFLINE: motor y UI
+   ========================== */
+
+/* ---------- utilidades ---------- */
+const $ = id => document.getElementById(id);
+const chatBox = $('chatBox');
+const userInput = $('userInput');
+const sendBtn = $('sendBtn');
+const voiceBtn = $('voiceBtn');
+const voiceToggle = $('voiceToggle');
+const voiceVol = $('voiceVol');
+const typeSpeedEl = $('typeSpeed');
+const statusSmall = $('statusSmall');
+const logoEl = $('logoEl');
+const visualWave = $('visualWave');
+const beep = $('beep');
+
+let typeSpeed = parseInt(typeSpeedEl.value);
+typeSpeedEl.addEventListener('input', ()=> typeSpeed = parseInt(typeSpeedEl.value));
+
+/* ---------- memoria local (pares Q -> A) ---------- */
+const DEFAULT_KB = [
+  {q:"hola", a:"Hola, soy Zylkia 5 — tu asistente gamer educativo. ¿En qué te ayudo hoy?"},
+  {q:"quien eres", a:"Soy Zylkia, una IA offline hecha para tu página. Puedo escuchar, hablar y aprender."},
+  {q:"¿cómo te llamas?", a:"Me llamo Zylkia 5. Listo para la misión."},
+  {q:"ayuda", a:"Dime lo que necesitas: puedo explicarte las normas, jugar, o guardar nuevos conocimientos."},
+  {q:"manual", a:"Puedo integrar el Manual de Convivencia: mándame preguntas sobre las normas y las guardaré como misiones."},
+  {q:"para que sirve el manual", a:"¿Qué es el Manual de Convivencia? “El manual de convivencia puede entenderse como una herramienta en la que se consignan los acuerdos de la comunidad educativa para facilitar y garantizar la armonía en la vida diaria de los establecimientos educativos."},
+  {q:"cuales son las normas de convivencia", a:"Puedo integrar el Manual de Convivencia: mándame preguntas sobre las normas y las guardaré como misiones."},
+];
+
+function loadMemory(){
+  try {
+    const raw = localStorage.getItem('zylkia_memory_v1');
+    if(!raw) { localStorage.setItem('zylkia_memory_v1', JSON.stringify(DEFAULT_KB)); return DEFAULT_KB.slice(); }
+    return JSON.parse(raw);
+  } catch(e){ console.error(e); localStorage.removeItem('zylkia_memory_v1'); return DEFAULT_KB.slice(); }
+}
+function saveMemory(mem){ localStorage.setItem('zylkia_memory_v1', JSON.stringify(mem)); }
+let MEMORY = loadMemory();
+
+/* ---------- helpers: fuzzy & matching ---------- */
+function normalize(s){ return (s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^\w\s]/g,'').trim(); }
+
+/* Levenshtein - distancia simple para fuzzy matching */
+function levenshtein(a,b){
+  a=String(a); b=String(b);
+  if(a===b) return 0;
+  const al=a.length, bl=b.length;
+  if(al===0) return bl; if(bl===0) return al;
+  const v=new Array(bl+1).fill(0).map((_,i)=>i);
+  for(let i=0;i<al;i++){
+    let prev=v[0]; v[0]=i+1;
+    for(let j=0;j<bl;j++){
+      const cur=v[j+1];
+      const cost = a[i]===b[j]?0:1;
+      v[j+1] = Math.min(v[j]+1, v[j+1]+1, prev+cost);
+      prev = cur;
+    }
+  }
+  return v[bl];
+}
+
+/* Score to rank candidates */
+function candidateScore(q, cand){
+  const nq = normalize(q);
+  const nqCand = normalize(cand.q);
+  if(nq === nqCand) return 999; // exact
+  // share words
+  const qWords = new Set(nq.split(/\s+/));
+  const candWords = new Set(nqCand.split(/\s+/));
+  let common = 0;
+  qWords.forEach(w=>{ if(candWords.has(w)) common++; });
+  // levenshtein normalized
+  const lev = levenshtein(nq, nqCand);
+  const levScore = Math.max(0, 100 - lev);
+  return common*30 + levScore;
+}
+
+/* ---------- motor de respuesta ---------- */
+function findBestAnswer(query){
+  const qnorm = normalize(query);
+  if(!qnorm) return null;
+  // 1) Exact match
+  for(const p of MEMORY){
+    if(normalize(p.q) === qnorm) return {a:p.a, reason:'exact'};
+  }
+  // 2) word containment
+  for(const p of MEMORY){
+    const pq = normalize(p.q);
+    if(qnorm.includes(pq) || pq.includes(qnorm)){
+      return {a:p.a, reason:'contain'};
+    }
+  }
+  // 3) fuzzy: rank by score
+  const scored = MEMORY.map(p=>({p, s: candidateScore(query, p)})).sort((a,b)=>b.s - a.s);
+  if(scored.length && scored[0].s > 18) return {a:scored[0].p.a, reason:'fuzzy'};
+  // 4) fallback creative generation (local pseudo-gpt)
+  return null;
+}
+
+/* Pseudo-generador creativo - mezcla plantillas y transforma */
+function generateFallback(query, mode='creative'){
+  // simple heuristics to appear "intelligent"
+  const q = query.trim();
+  if(q.endsWith('?')) {
+    if(mode==='concise') return "Buena pregunta. Puedo investigar eso si me das contexto o agregarlo a mi memoria.";
+    return `Interesante pregunta: "${q}". No lo sé con certeza todavía, pero puedo aprenderlo si me enseñas. Por ahora te doy un consejo: intenta descomponer la pregunta y buscar información clave.`;
+  }
+  // otherwise, answer like a sage gamer
+  if(mode==='concise') return "No tengo la respuesta exacta en mi memoria. Puedes enseñarme o usar /help para opciones.";
+  return `¡Modo épico activado! Aunque no tengo ese dato memorizado, como Zylkia 5 te digo: explora, practica y repite. Si quieres, guarda esta respuesta para próximas veces.`;
+}
+
+/* ---------- UI: append message + typewriter + voice ---------- */
+function appendMessage(by, text, meta){
+  const el = document.createElement('div');
+  el.className = 'msg ' + (by==='user' ? 'user' : 'ai');
+  const avatar = document.createElement('div'); avatar.className='avatar'; avatar.textContent = by==='user' ? 'U' : 'Z';
+  const bubble = document.createElement('div'); bubble.className='bubble';
+  bubble.textContent = ''; // will type
+  el.appendChild(avatar); el.appendChild(bubble);
+  chatBox.appendChild(el);
+  chatBox.scrollTop = chatBox.scrollHeight;
+  // typewriter
+  typeWriter(bubble, text, ()=> {
+    // after typed
+    if(by==='ai') {
+      // small meta
+      if(meta && meta.reason){
+        const m = document.createElement('div'); m.className='meta'; m.textContent = `(${meta.reason})`;
+        bubble.appendChild(m);
+      }
+      // play small sound
+      beep.currentTime = 0; try{ beep.play(); }catch(e){}
+    }
+    chatBox.scrollTop = chatBox.scrollHeight;
+  });
+}
+
+/* typewriter: prints with delay and visual wave reaction */
+async function typeWriter(node, text, cb){
+  const speed = typeSpeed; // ms per char
+  for(let i=0;i<text.length;i++){
+    node.textContent += text[i];
+    // animate wave intensity by char
+    const intensity = 0.06 + Math.min(0.9, (i/text.length)*0.9);
+    visualWave.style.opacity = (0.03 + intensity*0.04).toString();
+    await new Promise(r=>setTimeout(r, speed));
+  }
+  visualWave.style.opacity = '0.03';
+  if(cb) cb();
+  // optionally speak
+  if(voiceToggle.checked) speak(node.textContent);
+}
+
+/* ---------- speech synthesis ---------- */
+function speak(text){
+  if(!('speechSynthesis' in window)) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.rate = 1.0; u.pitch = 1.0; u.volume = parseFloat(voiceVol.value||0.9);
+  // pick a voice if available
+  const voices = speechSynthesis.getVoices();
+  if(voices.length){
+    // prefer Spanish voices
+    const v = voices.find(x => /es|Spanish/i.test(x.lang)) || voices[0];
+    if(v) u.voice = v;
+  }
+  speechSynthesis.cancel(); // stop previous
+  speechSynthesis.speak(u);
+}
+
+/* ---------- procesar input ---------- */
+async function processInput(raw){
+  const text = (raw||'').trim();
+  if(!text) return;
+  appendMessage('user', text);
+  // commands
+  if(text.startsWith('/')){
+    handleCommand(text);
+    return;
+  }
+  // check if it's a teaching pattern: "Pregunta => Respuesta" or "Teach: q | a"
+  const teachMatch = text.match(/^teach:\s*(.+?)\s*\|\s*(.+)$/i) || text.match(/^(.+)\s*=>\s*(.+)$/);
+  if(teachMatch){
+    const q = teachMatch[1].trim();
+    const a = teachMatch[2].trim();
+    MEMORY.push({q,qraw:q,a});
+    saveMemory(MEMORY);
+    appendMessage('ai', `✅ Guardé: "${q}" → "${a}"`, {reason:'aprendido'});
+    return;
+  }
+
+  // find answer in memory
+  const best = findBestAnswer(text);
+  if(best){
+    appendMessage('ai', best.a, {reason: best.reason});
+    return;
+  }
+
+  // no match → fallback generate
+  const mode = $('modeSelect').value || 'creative';
+  const fallback = generateFallback(text, mode);
+  appendMessage('ai', fallback, {reason:'fallback'});
+  // offer to learn automatically: prompt user
+  const teachPrompt = `¿Quieres enseñarme a responder eso cuando me preguntes "${text}"? Responde: teach: ${text} | [tu respuesta aquí]`;
+  // small suggestion bubble (not spoken)
+  setTimeout(()=> appendMessage('ai', teachPrompt, {reason:'sugerencia'}), 500);
+}
+
+/* ---------- commands ---------- */
+function handleCommand(cmd){
+  if(cmd === '/clear'){
+    chatBox.innerHTML = '';
+    appendMessage('ai','Conversación limpia. Listo.','system');
+    return;
+  }
+  if(cmd === '/help'){
+    appendMessage('ai', 'Comandos: /clear, /export, /import, /help\nTambién puedes enseñarme con: teach: pregunta | respuesta  — o usa "pregunta => respuesta".', {reason:'help'});
+    return;
+  }
+  if(cmd === '/export'){
+    exportMemory();
+    return;
+  }
+  if(cmd === '/import'){
+    $('importBtn').click();
+    return;
+  }
+  appendMessage('ai', 'Comando no reconocido. Escribe /help para ver opciones.');
+}
+
+/* ---------- export / import / reset ---------- */
+function exportMemory(){
+  const blob = new Blob([JSON.stringify(MEMORY, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'zylkia_memory.json'; document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  appendMessage('ai','✅ Memoria exportada.','system');
+}
+$('exportMemory').addEventListener('click', exportMemory);
+
+$('importBtn').addEventListener('click', ()=> $('importFile').click());
+$('importFile').addEventListener('change', (ev)=>{
+  const f = ev.target.files[0];
+  if(!f) return;
+  const r = new FileReader();
+  r.onload = e => {
+    try{
+      const arr = JSON.parse(e.target.result);
+      if(Array.isArray(arr)){
+        MEMORY = arr.concat(MEMORY); // prefer imported first
+        saveMemory(MEMORY);
+        appendMessage('ai','✅ Importación completada. Memoria actualizada.',{reason:'import'});
+      } else appendMessage('ai','Formato inválido. Se esperaba un array de pares {q,a}.');
+    }catch(err){ appendMessage('ai','Error leyendo archivo: '+err.message); }
+  };
+  r.readAsText(f);
+});
+
+$('resetMemory').addEventListener('click', ()=>{
+  if(confirm('¿Borrar toda la memoria local? (esto reiniciará a los valores por defecto)')) {
+    localStorage.removeItem('zylkia_memory_v1');
+    MEMORY = loadMemory();
+    appendMessage('ai','Memoria reiniciada a valores por defecto.',{reason:'reset'});
+  }
+});
+
+/* ---------- UI events (send/voice) ---------- */
+sendBtn.addEventListener('click', ()=>{ const v = userInput.value; userInput.value=''; processInput(v); });
+userInput.addEventListener('keydown', e => { if(e.key==='Enter'){ e.preventDefault(); sendBtn.click(); } });
+
+/* Speech recognition (opcional) */
+let recognizing = false;
+let rec;
+if('webkitSpeechRecognition' in window || 'SpeechRecognition' in window){
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  rec = new SR();
+  rec.lang = 'es-ES';
+  rec.interimResults = false;
+  rec.maxAlternatives = 1;
+  rec.onresult = e => {
+    const text = e.results[0][0].transcript;
+    userInput.value = text;
+    processInput(text);
+  };
+  rec.onend = ()=> { recognizing = false; voiceBtn.textContent='🎙️'; };
+  rec.onerror = (ev)=> { recognizing=false; voiceBtn.textContent='🎙️'; appendMessage('ai','Error de reconocimiento: '+ev.error); };
+} else {
+  rec = null;
+  // disable voice if not supported
+  voiceBtn.title = "Reconocimiento de voz no soportado por tu navegador";
+}
+
+voiceBtn.addEventListener('click', ()=>{
+  // toggle speech recognition
+  if(rec){
+    if(!recognizing){ try{ rec.start(); recognizing=true; voiceBtn.textContent='🛑'; }catch(e){} }
+    else{ rec.stop(); recognizing=false; voiceBtn.textContent='🎙️'; }
+    return;
+  }
+  // fallback: speak to input (text-to-speech prompt)
+  appendMessage('ai','Reconocimiento no soportado. Usa el mic externo o escribe tu pregunta.',{reason:'voice'});
+});
+
+/* small animation on logo when new AI message */
+const animateLogo = ()=>{ logoEl.animate([{transform:'scale(1)'},{transform:'scale(1.06)'}],{duration:320,iterations:1,easing:'ease-out'}); };
+
+/* intercept appendMessage to animate logo on AI posts */
+const origAppend = appendMessage;
+appendMessage = function(by, text, meta){
+  origAppend(by, text, meta);
+  if(by==='ai') { animateLogo(); }
+};
+
+/* ---------- initial greeting ---------- */
+setTimeout(()=> appendMessage('ai', 'Zylkia 5 online — listo para la misión. Escribe una pregunta o di "teach: pregunta | respuesta" para enseñarme.'), 500);
+
+/* ---------- small niceties: keyboard shortcuts ---------- */
+document.addEventListener('keydown', e=>{
+  if(e.ctrlKey && e.key==='k'){ userInput.focus(); e.preventDefault(); }
+});
+
+/* ---------- accessibility: stop speaking on click ---------- */
+document.addEventListener('click', ()=>{ try{ if(speechSynthesis.speaking) speechSynthesis.cancel(); }catch(e){} });
+
+/* ---------- finish ---------- */
+statusSmall.textContent = 'Zylkia lista. Habla o escribe.';
+
+
+</script>
+</body>
+</html>

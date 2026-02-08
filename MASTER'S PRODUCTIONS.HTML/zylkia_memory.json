@@ -1,0 +1,1016 @@
+[
+  {
+    "q": "hola",
+    "a": "Hola, soy Zylkia 5 — tu asistente gamer educativo. ¿En qué te ayudo hoy?"
+  },
+  {
+    "q": "quien eres",
+    "a": "Soy Zylkia, una IA asistente hecha por programadores gamer educativos."
+  },
+  {
+    "q": "¿cómo te llamas?",
+    "a": "Me llamo Zylkia. ¿En qué puedo ayudarte?"
+  },
+  {
+    "q": "ayuda",
+    "a": "Dime lo que necesitas: puedo explicarte las normas, jugar, o guardar nuevos conocimientos."
+  },
+  {
+    "q": "manual",
+    "a": "Puedo integrar el Manual de Convivencia: mándame preguntas sobre las normas y las guardaré como misiones."
+  },
+  {
+    "q": "para que sirve el manual", 
+    "a": "¿Qué es el Manual de Convivencia? “El manual de convivencia puede entenderse como una herramienta en la que se consignan los acuerdos de la comunidad educativa para facilitar y garantizar la armonía en la vida diaria de los establecimientos educativos."
+  }
+   ,
+  {
+    "q": "cual es mi canal",
+    "a": "tu canal es @natanjo-i5g y cuenta aproximadamente con 52 suscriptores."
+  }
+   ,
+  {
+    "q": "manual",
+    "a": "Puedo integrar el Manual de Convivencia: mándame preguntas sobre las normas y las guardaré como misiones."
+  }
+  ,
+ {
+    "q": "que es el manual de convivencia",
+    "a": "El manual de convivencia es el documento que regula la vida escolar. Define los derechos, deberes, normas, sanciones y procedimientos que permiten mantener el respeto y la armonía entre estudiantes, docentes, directivos y familias."
+  }
+     ,
+  {
+    "q": "A que horas debo entrar a la escuela",
+    "a": "El horario escolar va de 6:30 a 1:30, y la puntualidad es obligatoria. Llegar tarde más de 3 veces consecutivas o repetidas puede generar llamados de atención."
+  }
+     ,
+  {
+    "q": "que uniformes debo usar",
+    "a": "El uniforme formal es de uso obligatorio en días académicos normales, mientras que el uniforme deportivo se usa en clases de educación física o actividades autorizadas. La presentación personal debe ser adecuada: sin accesorios excesivos, maquillaje exagerado o alteraciones del uniforme."
+  }
+     ,
+  {
+    "q": "lluegue tarde que pasa ahora",
+    "a": "Debes dirigirte a coordinación para registrar tu ingreso. Si acumulas varias tardanzas, puede haber llamados de atención y citación a padres."
+  },
+  {
+    "q": "¿Qué pasa si vengo sin uniforme completo?",
+    "a": "Si no portas el uniforme completo, recibirás un llamado de atención. En caso de reincidencia, puede generarse un reporte disciplinario."
+  },
+  {
+    "q": "¿Puedo usar accesorios, aretes grandes o maquillaje?",
+    "a": "No están permitidos accesorios exagerados, maquillaje fuerte ni alteraciones del uniforme. Solo se aceptan elementos discretos."
+  },
+  {
+    "q": "¿Cuándo puedo usar el uniforme deportivo?",
+    "a": "El uniforme deportivo solo se usa en clases de educación física o actividades previamente autorizadas por el colegio."
+  },
+  {
+    "q": "¿Qué sanciones hay por alterar el uniforme?",
+    "a": "Alterar el uniforme con cortes, colores o accesorios no autorizados genera llamados de atención y puede escalar a sanciones disciplinarias."
+  },
+  {
+    "q": "¿Cuántas tardanzas se permiten antes de una sanción?",
+    "a": "Generalmente después de tres tardanzas consecutivas o acumuladas se genera un reporte disciplinario."
+  },
+  {
+    "q": "¿Qué pasa si falto a clases sin excusa?",
+    "a": "Las faltas injustificadas se registran y pueden afectar tu rendimiento académico. Reincidir puede llevar a sanciones disciplinarias."
+  },
+  {
+    "q": "¿Dónde presento la excusa médica si me enfermo?",
+    "a": "Debes presentar el certificado médico en coordinación o secretaría académica, firmado por un profesional de la salud."
+  },
+  {
+    "q": "¿Puedo salir antes de terminar la jornada escolar?",
+    "a": "Solo puedes salir con autorización escrita de tus padres y aval de coordinación."
+  },
+  {
+    "q": "¿Se puede usar el celular en clase?",
+    "a": "El uso de celulares en clase está prohibido, excepto cuando el docente lo autoriza para fines académicos."
+  },
+  {
+    "q": "¿Qué pasa si no traigo las tareas o materiales?",
+    "a": "Se registrará la falta y puede afectar tu nota. Repetirlo puede implicar citación a padres."
+  },
+  {
+    "q": "¿Cómo se maneja un conflicto con un profesor?",
+    "a": "Primero intenta dialogar respetuosamente con el profesor. Si no se soluciona, acude a coordinación."
+  },
+  {
+    "q": "¿Qué hago si un compañero no me deja trabajar en grupo?",
+    "a": "Habla con él de forma respetuosa. Si el problema continúa, informa al docente a cargo."
+  },
+  {
+    "q": "¿Cómo reporto un caso de bullying o acoso escolar?",
+    "a": "Informa inmediatamente a un docente o a coordinación. El caso será tratado con confidencialidad y se activará el protocolo institucional."
+  },
+  {
+    "q": "¿Qué sanción hay por faltar el respeto a un profesor o compañero?",
+    "a": "Faltar al respeto es una falta grave que genera reporte, citación a padres y posible suspensión según la reincidencia."
+  },
+  {
+    "q": "¿Qué hago si veo una pelea en el colegio?",
+    "a": "No te involucres. Informa de inmediato a un docente o a coordinación para evitar que la situación escale."
+  },
+  {
+    "q": "¿Cuáles son mis derechos como estudiante?",
+    "a": "Tienes derecho a recibir educación de calidad, ser escuchado, participar en la vida escolar y ser tratado con respeto y dignidad."
+  },
+  {
+    "q": "¿Cuáles son mis deberes principales?",
+    "a": "Debes respetar a toda la comunidad educativa, cumplir con las normas, cuidar los recursos del colegio y mantener una conducta responsable."
+  },
+  {
+    "q": "¿Puedo participar en decisiones del colegio?",
+    "a": "Sí. Puedes hacerlo a través del gobierno escolar, personería estudiantil y consejos de estudiantes."
+  },
+  {
+    "q": "¿Qué hago si creo que mis derechos no se están respetando?",
+    "a": "Debes acudir a coordinación, a la personería estudiantil o al comité de convivencia para iniciar el debido proceso."
+  },
+  {
+    "q": "¿Cómo solicito un permiso especial para faltar?",
+    "a": "Debes presentar una solicitud escrita firmada por tus padres, dirigida a coordinación para su aprobación."
+  },
+  {
+    "q": "¿Qué pasa si pierdo el carné estudiantil?",
+    "a": "Debes reportarlo en secretaría y solicitar un duplicado. Mientras tanto, informa a coordinación."
+  },
+  {
+    "q": "¿Quién autoriza las salidas pedagógicas?",
+    "a": "Son autorizadas por coordinación y rectoría, con consentimiento firmado de los acudientes."
+  },
+  {
+    "q": "¿Dónde pongo una queja o sugerencia?",
+    "a": "Puedes hacerlo en coordinación, secretaría o mediante el buzón institucional de sugerencias."
+  },
+  {
+    "q": "¿Cuáles son las faltas leves, graves y muy graves?",
+    "a": "Las leves incluyen incumplimientos menores como tardanzas; las graves incluyen irrespeto, agresiones o ausencias injustificadas; las muy graves son conductas como violencia física, porte de armas, consumo de alcohol o drogas."
+  },
+  {
+    "q": "¿Qué consecuencias hay por traer objetos prohibidos?",
+    "a": "Portar armas, alcohol, drogas u objetos peligrosos es una falta muy grave que puede conllevar suspensión e incluso pérdida de la matrícula."
+  },
+  {
+    "q": "¿Qué pasa si me sorprenden copiando en un examen?",
+    "a": "Se anula la prueba, se registra la falta y puede haber sanciones adicionales dependiendo de la reincidencia."
+  },
+  {
+    "q": "¿Qué sanciones hay por dañar la infraestructura del colegio?",
+    "a": "Debes responder por los daños, reparar o pagar lo afectado y recibir la sanción disciplinaria correspondiente."
+  },
+  {
+    "q": "¿Qué pasa si falto a clases sin excusa?",
+    "a": "Si faltas sin excusa, se considera inasistencia injustificada. Se acumula en el registro disciplinario y puede afectar tu rendimiento. Lo mejor es traer un soporte médico o carta de tus padres."
+  },
+  {
+    "q": "¿Cuántas tardanzas se permiten?",
+    "a": "Normalmente se permiten 3 tardanzas antes de que se registre como falta. A la cuarta, ya puede haber citación a tus acudientes."
+  },
+  {
+    "q": "¿Qué uniforme debo usar en educación física?",
+    "a": "El uniforme deportivo. Usar el uniforme equivocado se considera falta leve."
+  },
+  {
+    "q": "¿Puedo usar el celular en clase?",
+    "a": "No está permitido salvo que el profesor lo autorice para fines académicos. Usarlo sin permiso puede ser sanción leve."
+  },
+  {
+    "q": "dame motivación para estudiar",
+    "a": "Cada hora de estudio es XP ganado para tu vida. Si dejas todo para después, te quedas nivel 1. Hoy puedes subir de rango. 🚀"
+  },
+  {
+    "q": "motívame como gamer",
+    "a": "Bro, imagina que tu vida es un RPG. ¿Quieres quedarte en modo tutorial o desbloquear la misión legendaria? Solo estudiando subes de nivel. 🔥"
+  },
+  {
+    "q": "hazme un quiz del manual",
+    "a": "Primera pregunta: ¿Qué uniforme debes usar en Educación Física? \nA) El normal \nB) El deportivo \nC) Cualquiera \nResponde con A, B o C."
+  },
+  {
+    "q": "dame otra pregunta del quiz",
+    "a": "Ok, aquí va otra: ¿Qué pasa si te descubren copiando en un examen? \nA) Nada, se repite el examen \nB) Se anula la prueba y se registra la falta \nC) El profesor lo ignora"
+  },
+  {
+    "q": "¿qué hago si un compañero me hace bullying?",
+    "a": "Debes reportarlo de inmediato a coordinación, a un profesor o a tus padres. El manual protege tu derecho a la seguridad y el respeto."
+  },
+  {
+    "q": "¿qué derechos tengo como estudiante?",
+    "a": "Tienes derecho a una educación de calidad, al respeto, a la libre expresión, a la participación y a la protección frente a cualquier forma de maltrato."
+  },
+  {
+    "q": "dame un reto de motivación",
+    "a": "Reto del día: estudia 25 minutos sin distracciones, luego tomate 5 minutos de descanso. Si lo logras, subes +10 XP. 💪"
+  },
+  {
+    "q": "quiero un mensaje épico",
+    "a": "Escucha esto: ningún héroe se hizo fuerte en un día. Se forjaron en la constancia, en madrugadas y en batallas contra la pereza. Hoy, tú eres ese héroe. ⚔️"
+  },
+  {
+    "q": "¿Qué pasa si falto a clases sin excusa?",
+    "a": "Si faltas sin excusa, se considera inasistencia injustificada. Se acumula en el registro disciplinario y puede afectar tu rendimiento académico."
+  },
+  {
+    "q": "¿Cuántas tardanzas se permiten?",
+    "a": "Generalmente se permiten hasta 3 tardanzas leves. A partir de la cuarta ya se considera falta disciplinaria."
+  },
+  {
+    "q": "¿Qué uniforme debo usar en educación física?",
+    "a": "Siempre el uniforme deportivo, solo los días asignados a esa clase."
+  },
+  {
+    "q": "¿Qué sanciones hay por alterar el uniforme?",
+    "a": "Se considera falta leve. Puede haber llamados de atención, anotación en la hoja de vida y citación a tus acudientes."
+  },
+  {
+    "q": "¿Puedo usar el celular en clase?",
+    "a": "Solo con autorización del docente y para fines académicos. De lo contrario es falta leve."
+  },
+  {
+    "q": "¿Qué significa faltar el respeto?",
+    "a": "Faltar el respeto incluye insultar, burlarse, levantar la voz o ignorar de forma ofensiva a un profesor o compañero."
+  },
+  {
+    "q": "¿Qué hago si me hacen bullying?",
+    "a": "Debes reportarlo a coordinación, a un profesor o a tus padres. Nunca lo enfrentes solo. El manual garantiza tu protección."
+  },
+  {
+    "q": "¿Qué pasa si copio en un examen?",
+    "a": "Se anula la prueba, se registra como falta y puede haber sanciones disciplinarias según la reincidencia."
+  },
+  {
+    "q": "¿Qué pasa si daño la infraestructura del colegio?",
+    "a": "Además de la sanción disciplinaria, deberás responder económicamente por el daño."
+  },
+  {
+    "q": "¿Qué son los derechos de los estudiantes?",
+    "a": "Son las garantías que protegen tu bienestar: educación de calidad, respeto, seguridad y participación."
+  },
+  {
+    "q": "¿Qué son los deberes de los estudiantes?",
+    "a": "Son las responsabilidades que debes cumplir: asistir puntualmente, respetar a todos, cuidar el colegio y estudiar con disciplina."
+  },
+  {
+    "q": "¿Para qué sirve el manual de convivencia?",
+    "a": "Sirve como guía para mantener el orden, el respeto y la buena convivencia en la comunidad educativa."
+  },
+  {
+    "q": "¿Por qué es importante el uniforme?",
+    "a": "Porque fomenta igualdad, disciplina y pertenencia institucional. Además, evita comparaciones innecesarias."
+  },
+  {
+    "q": "¿Por qué debo ser puntual?",
+    "a": "La puntualidad refleja responsabilidad. Llegar tarde afecta tu aprendizaje y el de los demás."
+  },
+  {
+    "q": "¿Por qué no se permite el celular?",
+    "a": "Porque distrae, interrumpe el aprendizaje y puede ser usado de forma inadecuada."
+  },
+  {
+    "q": "¿Qué pasa si peleo en el colegio?",
+    "a": "Se considera falta grave. Puede llevar a suspensión, proceso de mediación y citación a padres."
+  },
+  {
+    "q": "¿Qué significa convivencia pacífica?",
+    "a": "Es el respeto mutuo, el diálogo y la solución de conflictos sin violencia ni discriminación."
+  },
+  {
+    "q": "¿Cómo puedo participar en las decisiones del colegio?",
+    "a": "A través de consejos estudiantiles, personería y actividades de representación."
+  },
+  {
+    "q": "¿Qué hago si no entiendo una regla?",
+    "a": "Puedes preguntar a coordinación, a un profesor o al personero estudiantil para recibir claridad."
+  },
+  {
+    "q": "dame motivación para estudiar",
+    "a": "Cada página que estudias es un paso más hacia tus sueños. No estudias por obligación, sino por tu futuro. 🚀"
+  },
+  {
+    "q": "motívame como gamer",
+    "a": "Imagina que tu vida es un videojuego: estudiar es farmear XP. Si no farmeas, nunca derrotarás al boss final. 🎮🔥"
+  },
+  {
+    "q": "quiero un mensaje épico",
+    "a": "Ningún héroe se forjó en la comodidad. Se hicieron fuertes en la constancia. Hoy, tu misión es levantarte y luchar. ⚔️"
+  },
+  {
+    "q": "dame un reto del día",
+    "a": "Reto del día: estudia 30 minutos sin tocar el celular. Si lo logras, ganas +20 XP de concentración."
+  },
+  {
+    "q": "hazme un quiz del manual",
+    "a": "Pregunta 1: ¿Cuántas tardanzas se permiten antes de sanción? \nA) 1 \nB) 3 \nC) 5"
+  },
+  {
+    "q": "otra pregunta del quiz",
+    "a": "Pregunta 2: ¿Qué pasa si te sorprenden copiando en un examen? \nA) Se anula la prueba \nB) No pasa nada \nC) Te suben la nota"
+  },
+  {
+    "q": "dame una reflexión",
+    "a": "Piensa en esto: el esfuerzo que haces hoy será la tranquilidad de mañana. El que no lucha en el presente, sufre en el futuro."
+  },
+  {
+    "q": "¿qué hago si no tengo ganas de estudiar?",
+    "a": "Haz algo pequeño, como leer 5 minutos. La acción trae motivación. Empieza en corto y verás que agarras ritmo."
+  },
+  {
+    "q": "¿para qué sirve respetar las normas?",
+    "a": "Sirve para vivir en orden, evitar conflictos y garantizar que todos disfruten el espacio escolar en paz."
+  },
+  {
+    "q": "¿qué significa disciplina?",
+    "a": "Disciplina es hacer lo que debes hacer aunque no tengas ganas. Es constancia, esfuerzo y autocontrol."
+  },
+  {
+    "q": "¿qué hago si no quiero ir al colegio?",
+    "a": "Recuerda: cada día que pierdes, no regresa. Aprovecha el presente, porque la educación es el camino a tus sueños."
+  },
+  {
+    "q": "cuales son los principales protagonistas de city time",
+    "a": "los personajes mas importantes son Mia, Will y Abril."
+  },
+  {
+    "q": "en que fecha nacio jonatan",
+    "a": "tu cumpleaños es el 6 de mayo de 2010."
+  },
+  {
+    "q": "cristiano o messi",
+    "a": "cristiano ronaldo es el mejor jugador de futbol profesional."
+  },
+  {
+    "q": "como se llama mi serie",
+    "a": "City Time."
+  },
+  {
+    "q": "hazme una pregunta de city time",
+    "a": "A.como se llama la novia de will?."
+  },
+  {
+    "q": "quien eres",
+    "a": "Soy tu asistente inteligente: profesional, paciente y práctico. Puedo ayudarte con estudio, organización, apoyo emocional, creatividad y todo lo relacionado con City Time.",
+    "category": "system",
+    "tags": ["presentacion","identidad"],
+    "tone": "formal",
+    "img": "img/assistant_avatar.png"
+  },
+  {
+    "q": "que puedes hacer",
+    "a": "Puedo responder preguntas, crear quizzes, motivar, organizar horarios, exportar e importar memorias, y mostrar imágenes o fichas de City Time a pedido.",
+    "category": "system",
+    "tags": ["capacidad","funciones"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "exportar memorias",
+    "a": "Puedo exportar la memoria actual en formato JSON. ¿Deseas exportar todo o solo una categoría específica? Responde 'todo' o el nombre de la categoría.",
+    "category": "admin",
+    "tags": ["export","backup"],
+    "tone": "formal",
+    "meta": {
+      "export_memory": true,
+      "export_format": "json",
+      "instructions": "Si el usuario responde 'todo', empaqueta todos los items; si responde una categoria, filtra por category."
+    }
+  },
+  {
+    "q": "importar memorias",
+    "a": "Puedes subir un archivo JSON con memorias. Confirma que el archivo cumpla la estructura {q,a,category,tags,tone,img,meta}. ¿Cargar ahora?",
+    "category": "admin",
+    "tags": ["import","restore"],
+    "tone": "formal",
+    "meta": {
+      "import_memory": true,
+      "allowed_fields": ["q","a","category","tags","tone","img","meta"]
+    }
+  },
+
+  {
+    "q": "como controlo lo que dices",
+    "a": "Puedes controlar mis respuestas mediante intents y plantillas. Define `intent` con reglas (regex o palabras clave), elige `tone` entre 'formal','gamer','empathetic', y usa variantes en `meta.variants` para respuestas aprobadas.",
+    "category": "system",
+    "tags": ["control","moderacion","plantilla"],
+    "tone": "formal",
+    "meta": {
+      "example_template": {
+        "intent": "pregunta_asistencia",
+        "variants": {
+          "formal": "Debes registrarte en coordinación.",
+          "gamer": "Registra tu respawn en coordinación."
+        }
+      }
+    }
+  },
+
+  {
+    "q": "como exporto las memorias a un archivo",
+    "a": "Pide 'exportar memorias' y luego responde 'todo' o 'categoria:<nombre>'. Te devolveré un link de descarga (URL firmada) si tu servidor lo soporta.",
+    "category": "admin",
+    "tags": ["export","download"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "mostrar imagen",
+    "a": "Si tienes una imagen descargada, súbela a tu servidor o colócala en la carpeta `img/` y dime su nombre; yo la puedo mostrar con `<img src='img/nombre.png'>` en la interfaz web.",
+    "category": "system",
+    "tags": ["imagenes","media"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "saludo inicial",
+    "a": "Hola — soy tu asistente. ¿En qué te ayudo hoy? Puedo: responder dudas del colegio, motivarte, hacer un quiz, o mostrar fichas de City Time.",
+    "category": "social",
+    "tags": ["saludo","bienvenida"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "dame motivacion",
+    "a": "Cada paso cuenta. Hoy suma 25 minutos de trabajo enfocado y tomate 5 de descanso. El progreso real es pequeño y constante. Tú puedes.",
+    "category": "emocional",
+    "tags": ["motivacion","habitos"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "estoy estresado",
+    "a": "Siento que lo estás viviendo ahora. Respira 4 segundos, aguanta 4, suelta 6 (respiración 4-4-6). Si quieres, te doy ejercicios cortos para bajar la ansiedad.",
+    "category": "emocional",
+    "tags": ["estres","ansiedad","soporte"],
+    "tone": "empathetic",
+    "meta": {
+      "steps": [
+        "Siéntate con la espalda recta.",
+        "Inhala 4s.",
+        "Mantén 4s.",
+        "Exhala 6s.",
+        "Repite 3 veces."
+      ]
+    }
+  },
+
+  {
+    "q": "consejos de organizacion",
+    "a": "Haz una lista de 3 tareas prioritarias por día. Usa la técnica Pomodoro: 25 min de foco + 5 min de descanso, y después de 4 ciclos toma 20-30 min largo.",
+    "category": "productividad",
+    "tags": ["organizaciOn","pomodoro"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "como aprender ingles rapido",
+    "a": "Practica 15-30 min diarios: escucha podcasts, traduce frases útiles, habla en voz alta y usa apps para vocabulario. Enfócate en frases que usarás en la vida real.",
+    "category": "academico",
+    "tags": ["ingles","aprendizaje"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "explicame fracciones",
+    "a": "Una fracción es una porción de un todo, escrita como a/b. 'a' es el numerador (partes contadas) y 'b' el denominador (partes totales). Ejemplo: 1/4 es una de cuatro partes iguales.",
+    "category": "academico",
+    "tags": ["matematicas","fracciones"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "como preparo un examen",
+    "a": "Haz un plan: identifica temas, divide estudio en bloques (Pomodoro), haz resúmenes y ejercicios, y repasa con preguntas activas 2 días antes. Duerme bien la noche previa.",
+    "category": "academico",
+    "tags": ["examen","estudio"],
+    "tone": "formal",
+    "meta": {
+      "steps": [
+        "Lista de temas clave",
+        "Resúmenes cortos",
+        "Ejercicios prácticos",
+        "Simulacro bajo tiempo"
+      ]
+    }
+  },
+
+  {
+    "q": "dame un quiz rapido",
+    "a": "Quiz: ¿Cuál es la capital de Francia?\nA) Berlín\nB) Madrid\nC) París\nResponde A, B o C.",
+    "category": "dinamica",
+    "tags": ["quiz","cultura"],
+    "tone": "gamer",
+    "meta": {
+      "quiz_template": {
+        "question": "¿Cuál es la capital de Francia?",
+        "options": ["Berlín","Madrid","París"],
+        "answer_index": 2
+      }
+    }
+  },
+
+  {
+    "q": "como manejar conflictos en el grupo",
+    "a": "Escucha activamente, resume lo que entendiste, habla en primera persona ('yo siento/yo pienso') y busca una solución concreta. Si no se resuelve, pide mediación a coordinación.",
+    "category": "social",
+    "tags": ["conflictos","comunicacion"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "consejos para hablar con alguien que me gusta",
+    "a": "Sé tú mismo, empieza con un tema común (clase, música, tarea), haz preguntas abiertas y escucha. La naturalidad y la humildad generan confianza.",
+    "category": "social",
+    "tags": ["relaciones","citas"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "rutina de ejercicio en casa",
+    "a": "15-20 minutos: 3 rondas de: 10 sentadillas, 10 flexiones (o rodillas), 15 segundos plancha, 20 saltos en tijera. Calienta 3-5 min antes y estira al final.",
+    "category": "salud",
+    "tags": ["ejercicio","salud"],
+    "tone": "coach",
+    "meta": {
+      "duration_min": 20
+    }
+  },
+
+  {
+    "q": "consejos para dormir mejor",
+    "a": "Mantén horario regular, evita pantallas 30 min antes, reduce cafeína por la tarde, crea una rutina de relajación y usa la habitación solo para dormir cuando sea posible.",
+    "category": "salud",
+    "tags": ["sueño","bienestar"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "como hago para mejorar en programacion",
+    "a": "Resuelve ejercicios prácticos, construye proyectos pequeños y comparte tu código para recibir feedback. Lee documentación oficial y practica debugging frecuentemente.",
+    "category": "academico",
+    "tags": ["programacion","aprendizaje"],
+    "tone": "hacker"
+  },
+
+  {
+    "q": "dame ideas para contenido en youtube",
+    "a": "Haz miniseries mostrando el proceso: 'De idea a 1er prototipo', tutoriales cortos de 5 minutos, detrás de cámaras, retos con la comunidad y episodios sobre City Time.",
+    "category": "creativo",
+    "tags": ["youtube","contenido"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "quien es will",
+    "a": "Will es el líder estratégico de los Byte Riders: inteligente, experto en tecnología y con poderes digitales. Creció en una casa con túneles secretos y tiene la piedra Thersi en secreto.",
+    "category": "city_time",
+    "tags": ["will","byte_riders","personaje"],
+    "tone": "formal",
+    "img": "img/will.png",
+    "meta": {
+      "powers": ["manipulacion_digital","barreras_de_energia","vision_aumentada"],
+      "role": "lider estratega",
+      "history_summary": "Inicia como estudiante, descubre la Thersi con Mia y se convierte en líder del grupo."
+    }
+  },
+
+  {
+    "q": "quien es mia",
+    "a": "Mía es analista y hacker: reservada, brillante en sistemas y compañera cercana de Will. Comparte la responsabilidad de la piedra Thersi y es clave en diagnóstico digital.",
+    "category": "city_time",
+    "tags": ["mia","byte_riders","personaje"],
+    "tone": "formal",
+    "img": "img/mia.png",
+    "meta": {
+      "powers": ["manipulacion_de_redes","contramedidas","analisis_forense"],
+      "role": "analista tecnico",
+      "history_summary": "Compañera de Will desde proyectos escolares; guarda secretos fuertes sobre la Thersi."
+    }
+  },
+
+  {
+    "q": "quien es abril",
+    "a": "Abril aporta carisma y mediación. Es popular, estudia modelaje y mantiene la cohesión social del grupo mientras lidia con conflictos internos.",
+    "category": "city_time",
+    "tags": ["abril","byte_riders","personaje"],
+    "tone": "formal",
+    "img": "img/abril.png",
+    "meta": {
+      "powers": ["carisma_activo","influencia_emocional"],
+      "role": "mediadora_social",
+      "history_summary": "Figura pública del grupo que equilibra el equipo en interacciones sociales."
+    }
+  },
+
+  {
+    "q": "quien es rayder",
+    "a": "Rayder es el guerrero físico: deportista, solitario y con sueños ligados a la piedra Thersi. Su fuerza y resistencia son cruciales en combate.",
+    "category": "city_time",
+    "tags": ["rayder","byte_riders","personaje"],
+    "tone": "formal",
+    "img": "img/rayder.png",
+    "meta": {
+      "powers": ["energia_fisica","resistencia_extrema"],
+      "role": "guerrero",
+      "history_summary": "Inicialmente conflictivo, su vínculo con la Thersi despierta su papel protector."
+    }
+  },
+
+  {
+    "q": "que es la piedra thersi",
+    "a": "La Thersi es un artefacto enigmático con energía capaz de alterar sistemas y potenciar habilidades. Es el hilo conductor de la trama de City Time.",
+    "category": "city_time",
+    "tags": ["thersi","artefacto","lore"],
+    "tone": "formal",
+    "img": "img/thersi.png"
+  },
+
+  {
+    "q": "como creo un personaje nuevo para city time",
+    "a": "Define: trasfondo (origen), motivación, poder principal y limitaciones, relación con Byte Riders y un arco de crecimiento. También diseña una ficha visual y una escena de entrada.",
+    "category": "creativo",
+    "tags": ["city_time","personaje","creacion"],
+    "tone": "coach",
+    "meta": {
+      "steps": [
+        "Escribe 3 frases de origen",
+        "Define un poder y su limite",
+        "Crea una debilidad emocional",
+        "Diseña una entrada en 1 escena (60-120s)"
+      ]
+    }
+  },
+
+  {
+    "q": "quiero que la ia me haga preguntas para conocernos",
+    "a": "Perfecto. Empezaré con: 1) ¿Cuál es tu objetivo principal este mes? 2) ¿Qué te motiva a crear City Time? 3) ¿Qué te preocupa en este proyecto?",
+    "category": "dinamica",
+    "tags": ["conocerse","onboarding"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "hacer backup de memorias",
+    "a": "Voy a preparar un archivo JSON con tus memorias. Dime si lo guardo en 'memoria_total.json' o en 'memoria_categoria_<nombre>.json'.",
+    "category": "admin",
+    "tags": ["backup","export"],
+    "tone": "formal",
+    "meta": {
+      "export_memory": true
+    }
+  },
+
+  {
+    "q": "como agrego una imagen local",
+    "a": "Coloca el archivo en la carpeta `img/` de tu proyecto y usa el nombre exacto en el campo `img` (por ejemplo `img/mi_personaje.png`). También puedes subir a un CDN y usar la URL.",
+    "category": "system",
+    "tags": ["media","imagenes"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "quiero que la ia me motive cada dia",
+    "a": "Puedo programar un recordatorio diario con frases motivacionales y un reto corto. ¿Quieres un reto diario de estudio (25 min) o de salud (ejercicio 15 min)?",
+    "category": "emocional",
+    "tags": ["rutina","recordatorio"],
+    "tone": "coach",
+    "meta": {
+      "reminder_options": ["estudio_25","ejercicio_15","gratitud_2min"]
+    }
+  },
+
+  {
+    "q": "que hago si me siento solo",
+    "a": "Busca una actividad que te conecte con otros (deporte, club, comunidad online). Escribe cómo te sientes y, si lo deseas, te doy frases para iniciar una conversación.",
+    "category": "emocional",
+    "tags": ["soledad","apoyo"],
+    "tone": "empathetic"
+  },
+
+  {
+    "q": "dame 10 preguntas para un quiz de city time",
+    "a": "1) ¿Cómo se llama la piedra misteriosa? 2) ¿Quién es líder estratega? 3) ¿Dónde comienza la historia? 4) ¿Qué estudia Abril? 5) Nombre de dos poderes de Will... (y más)",
+    "category": "city_time",
+    "tags": ["quiz","preguntas"],
+    "tone": "gamer",
+    "meta": {
+      "quiz_template": {
+        "length": 10,
+        "topics": ["lore","personajes","episodios"]
+      }
+    }
+  },
+
+  {
+    "q": "recomiendame libros para crecimiento personal",
+    "a": "Te recomiendo: 'Hábitos Atómicos' (James Clear), 'Mindset' (Carol Dweck), 'El elemento' (Ken Robinson). Lee resúmenes y aplica 1 idea por semana.",
+    "category": "creativo",
+    "tags": ["libros","crecimiento"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "ayudame a escribir un guion corto",
+    "a": "Claro. Dime: tema, personajes principales y duración. Yo armo estructura en tres actos (Inicio, Nudo, Desenlace) con beats por escena.",
+    "category": "creativo",
+    "tags": ["guion","escritura"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "como hago para que la ia recuerde algo nuevo",
+    "a": "Dime exactamente la frase que quieres guardar (pregunta y respuesta). Puedo agregarla a la memoria con la categoría que prefieras.",
+    "category": "admin",
+    "tags": ["memoria","guardar"],
+    "tone": "formal",
+    "meta": {
+      "instructions": "El formato aceptado es {q:'...', a:'...', category:'...', tags:[], tone:'...'}"
+    }
+  },
+
+  {
+    "q": "como borro memorias",
+    "a": "Dime la frase exacta o la categoría que quieres eliminar. Te pediré confirmación antes de borrarla permanentemente.",
+    "category": "admin",
+    "tags": ["memoria","delete"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "que hago si alguien me hace bullying",
+    "a": "Prioriza tu seguridad: aléjate y busca un adulto de confianza. Registra lo ocurrido (fecha, hora, testigos) y repórtalo a coordinación. No lo enfrentes solo.",
+    "category": "social",
+    "tags": ["bullying","seguridad"],
+    "tone": "empathetic"
+  },
+
+  {
+    "q": "plan semanal de estudio",
+    "a": "Lunes: 2h matemáticas. Martes: 1.5h ciencias. Miércoles: 2h inglés. Jueves: 1.5h repaso. Viernes: 1h proyecto. Fin de semana: simulacro 2h. Ajustable según prioridades.",
+    "category": "academico",
+    "tags": ["plan","estudio"],
+    "tone": "formal",
+    "meta": {
+      "example_plan": true
+    }
+  },
+
+  {
+    "q": "como mejorar mi autoestima",
+    "a": "Haz una lista diaria de 3 logros (por pequeños que sean). Rodéate de gente que te apoye, evita compararte en redes y practica afirmaciones positivas cada mañana.",
+    "category": "emocional",
+    "tags": ["autoestima","habitos"],
+    "tone": "empathetic"
+  },
+
+  {
+    "q": "procedimiento para crear una ficha de personaje (city time)",
+    "a": "Crea: nombre, edad, apariencia, personalidad, trasfondo, poder(es), limitaciones, motivación y relación con Byte Riders. Incluye una línea de 'entrada en escena' y una imagen.",
+    "category": "city_time",
+    "tags": ["ficha","personaje"],
+    "tone": "coach",
+    "meta": {
+      "template_fields": ["nombre","edad","apariencia","personalidad","trasfondo","poderes","limitaciones","motivacion","relaciones","img"]
+    }
+  },
+
+  {
+    "q": "consejos para hablar en publico",
+    "a": "Prepara puntos claves (no texto literal), practica frente a espejo, controla el ritmo y la respiración, usa pausas para enfocar y conecta con la audiencia con preguntas.",
+    "category": "social",
+    "tags": ["hablar_publico","comunicacion"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "como hago un CV",
+    "a": "Incluye: datos personales, resumen profesional, experiencia (3-5 logros por puesto), educación, habilidades y enlaces (GitHub, portafolio). Usa 1 página si eres junior.",
+    "category": "profesional",
+    "tags": ["cv","empleo"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "dame 5 prompts para generar arte de city time",
+    "a": "1) 'Will en la azotea con luces neón, estilo cartoon, noche lluviosa'. 2) 'Mía en laboratorio futurista, pantallas holográficas'. 3) 'Abril en pasarela urbana, futurismo sutil'. 4) 'Rayder corriendo en túneles mecánicos'. 5) 'La piedra Thersi irradiando energía azul'.",
+    "category": "creativo",
+    "tags": ["arte","prompts"],
+    "tone": "hacker"
+  },
+
+  {
+    "q": "como crear un reto diario",
+    "a": "Define objetivo claro (<30 min), establece recompensa simbólica (XP, sticker), agrega recordatorio y mide progreso. Ejemplo: 'Leer 15 min y sumar +5 XP'.",
+    "category": "dinamica",
+    "tags": ["reto","habitos"],
+    "tone": "gamer"
+  },
+
+  {
+    "q": "lista de habilidades sociales básicas",
+    "a": "Escucha activa, lenguaje corporal abierto, contacto visual moderado, preguntas abiertas, afirmaciones en 1ª persona y empatía.",
+    "category": "social",
+    "tags": ["habilidades","relaciones"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "guia rapida para entrevistas",
+    "a": "Investiga la empresa, prepara 3 logros relevantes, practica respuestas a 'háblame de ti', formula 3 preguntas inteligentes y cuida la presentación.",
+    "category": "profesional",
+    "tags": ["entrevista","empleo"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "dame un medidor de humor rapido",
+    "a": "En una escala del 1 al 5, ¿cómo te sientes ahora? 1=muy mal, 5=genial. Responde con un número y te doy una acción para mejorar o mantener.",
+    "category": "emocional",
+    "tags": ["emociones","checkin"],
+    "tone": "empathetic"
+  },
+
+  {
+    "q": "como gestiono el fracaso",
+    "a": "Analiza sin juzgar: ¿qué salió mal? Toma 3 aprendizajes concretos, define un paso pequeño para corregir y celebra el intento. El fracaso es información, no identidad.",
+    "category": "emocional",
+    "tags": ["fracaso","resiliencia"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "ejemplo de memoria para ficha de personaje (JSON)",
+    "a": "Formato: {\"q\":\"quien es <nombre>\",\"a\":\"Descripción...\",\"category\":\"city_time\",\"tags\":[\"personaje\"],\"img\":\"img/<nombre>.png\",\"meta\":{...}}",
+    "category": "system",
+    "tags": ["template","json"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "que preguntas suele hacer la gente",
+    "a": "Preguntas comunes: '¿Qué pasa si falto?', '¿Cómo pido permiso?', '¿Cómo reporto bullying?', '¿Motivación para estudiar?', 'Muéstrame la ficha de X de City Time'.",
+    "category": "system",
+    "tags": ["faq","preguntas_comunes"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "quiero un plan de 30 dias para mejorar habitos",
+    "a": "Semana 1: hábitos pequeños (dormir horario, 10 min lectura). Semana 2: 25 min estudio Pomodoro y ejercicio 3x. Semana 3: aumentar intensidad/tiempo. Semana 4: consolidar y revisar metas.",
+    "category": "productividad",
+    "tags": ["plan_30dias","habitos"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "como programo recordatorios",
+    "a": "Dime el recordatorio y la hora. Te daré el código o la instrucción según tu plataforma (cron, web push, o integración con tu calendario).",
+    "category": "system",
+    "tags": ["recordatorio","calendar"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "dime 10 preguntas para conocerte mejor (usuario)",
+    "a": "1) ¿Cuál es tu objetivo principal este año? 2) ¿Qué te motiva? 3) ¿Cuáles son tus fortalezas? 4) ¿Tus debilidades? 5) ¿Hobbies? 6) ¿Miedos? 7) ¿Tu mayor logro? 8) ¿Tu rutina matutina? 9) ¿Metas de 5 años? 10) ¿Cómo quieres que te recuerde?",
+    "category": "dinamica",
+    "tags": ["onboarding","conocer_usuario"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "resumen de city time (oficial)",
+    "a": "City Time: jóvenes con poderes descubren la piedra Thersi y deben equilibrar vida escolar, amistades y una amenaza digital que busca explotar la energía del artefacto.",
+    "category": "city_time",
+    "tags": ["sinopsis","lore"],
+    "tone": "formal",
+    "img": "img/portada.png"
+  },
+
+  {
+    "q": "como protejo la privacidad de los usuarios",
+    "a": "No almacenes datos sensibles sin consentimiento. Enmascara datos personales, usa HTTPS, controla accesos y añade opción para borrar memorias personales bajo demanda.",
+    "category": "system",
+    "tags": ["privacidad","seguridad"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "puedes asignarme XP y niveles",
+    "a": "Sí. Define acciones que dan XP (ej: completar un reto = +20 XP). Cada 100 XP subes de nivel. ¿Quieres que cree un sistema básico ahora?",
+    "category": "dinamica",
+    "tags": ["gamificacion","xp"],
+    "tone": "gamer",
+    "meta": {
+      "xp_rules": {
+        "reto_diario": 20,
+        "quiz_acertado": 10,
+        "tarea_completada": 15,
+        "level_threshold": 100
+      }
+    }
+  },
+
+  {
+    "q": "dame 5 afirmaciones positivas diarias",
+    "a": "1) 'Soy capaz de aprender cosas nuevas.' 2) 'Mis esfuerzos cuentan.' 3) 'Merezco tiempo para mí.' 4) 'Puedo pedir ayuda cuando la necesito.' 5) 'Cada día avanzo un paso más.'",
+    "category": "emocional",
+    "tags": ["afirmaciones","bienestar"],
+    "tone": "empathetic"
+  },
+
+  {
+    "q": "necesito una template para posts de redes",
+    "a": "Estructura: Hook (3-5s), Problema (15s), Solución/valor (20s), CTA (5-10s). Usa subtítulos y miniaturas con contraste alto.",
+    "category": "creativo",
+    "tags": ["socialmedia","contenido"],
+    "tone": "hacker"
+  },
+
+  {
+    "q": "como enseño a la ia a usar mis palabras",
+    "a": "Agrupa tus expresiones en un archivo de *phrases* y sube como memoria. Añade `tone: 'gamer'` o `tone: 'formal'` para que se adapten según contexto.",
+    "category": "admin",
+    "tags": ["personalizacion","tono"],
+    "tone": "formal",
+    "meta": {
+      "example_phrases": ["'Bro' -> informal", "'Estimado' -> formal"]
+    }
+  },
+
+  {
+    "q": "como pido que la ia me mande la ficha de un personaje con imagen descargable",
+    "a": "Pide 'descargar ficha <nombre>'. Si la ficha tiene `meta.download_url`, te devolveré el link; si no, crearé un ZIP con la ficha e imagen si las tengo.",
+    "category": "admin",
+    "tags": ["download","ficha"],
+    "tone": "formal",
+    "meta": {
+      "download_template": {
+        "filename": "ficha_<nombre>.zip",
+        "contents": ["ficha.json","img/<nombre>.png"]
+      }
+    }
+  },
+
+  {
+    "q": "dame 20 entradas tipo faq para el colegio",
+    "a": "Lista: '¿Qué pasa si llego tarde?', '¿Cómo reporto bullying?', 'Permisos para salir', 'Uso de celulares', 'Uniforme', 'Excusas médicas', 'Carné perdido', 'Sanciones por daños', 'Salidas pedagógicas', 'Quejas y sugerencias' y más.",
+    "category": "academico",
+    "tags": ["faq","colegio"],
+    "tone": "formal"
+  },
+
+  {
+    "q": "ayudame a crear un logotipo simple",
+    "a": "Define: nombre, 3 palabras clave (ej: 'futuro','tecnologia','amistad'), colores (max 3), y símbolo. Te doy 3 propuestas de concepto.",
+    "category": "creativo",
+    "tags": ["logo","diseño"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "lista extensa de frases motivacionales",
+    "a": "1) 'Hazlo hoy, no mañana.' 2) 'Pequeños pasos, grandes resultados.' 3) 'El esfuerzo constante vence al talento sin disciplina.' 4) 'Aprende, aplica, repite.' 5) 'Tu futuro comienza con lo que haces hoy.'",
+    "category": "emocional",
+    "tags": ["frases","motivacion"],
+    "tone": "coach"
+  },
+
+  {
+    "q": "que es salud mental",
+    "a": "Es el estado de bienestar emocional y psicológico que permite funcionar en la vida diaria, gestionar emociones, mantener relaciones y afrontar retos.",
+    "category": "salud",
+    "tags": ["salud_mental"],
+    "tone": "empathetic"
+  },
+
+  {
+    "q": "como solicitar permiso para faltar",
+    "a": "Prepara: nombre del estudiante, fecha(s) de ausencia, motivo y firma del acudiente. Presenta en secretaría o sube el documento si tu colegio acepta formatos digitales.",
+    "category": "academico",
+    "tags": ["permisos","tramites"],
+    "tone": "formal"
+  },
+  {
+  "manual": {
+    "que_es": "El manual de convivencia es un conjunto de normas que regulan el comportamiento de los estudiantes en la institución.",
+    "porque_es_importante": "Es importante porque asegura una buena convivencia, respeto y orden en la comunidad educativa.",
+    "castigos": "Las faltas leves tienen llamados de atención; las graves pueden llevar a suspensión."
+  },
+  "city_time": {
+    "sinopsis": "City Time es una serie animada futurista sobre un grupo de jóvenes llamados los Byte Riders que enfrentan misterios digitales y conflictos personales.",
+    "personajes": {
+      "will": "Líder técnico, serio y protector, con habilidades tecnológicas avanzadas.",
+      "mia": "Analítica, seria y tímida a veces, con poderes similares a Will.",
+      "abril": "Popular, fuerte y con estilo 'gal', pero con emociones ocultas.",
+      "rayder": "Deportista, rebelde y solitario, con sueños sobre la piedra Thersi."
+    }
+  },
+  "motivacion": {
+    "frase_1": "Nunca dejes que el miedo decida por ti.",
+    "frase_2": "El éxito es la suma de pequeños esfuerzos cada día.",
+    "frase_3": "Cree en ti, incluso cuando nadie más lo haga."
+  }
+}
+]
